@@ -12,7 +12,6 @@ html, body {
   overflow-x: hidden;
 }
 body {
-  padding-top: 70px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,14 +22,12 @@ body {
 }
 header {
   width: 100%;
-  background: rgba(0,0,0,0.8); /* немного затемненный фон */
-  padding: 0.5rem 1.5rem;
-  box-sizing: border-box;
-  position: fixed;  /* фиксируем header */
-  top: 0;           /* привязка к верхней границе */
-  left: 0;
-  right: 0;
-  z-index: 1000;    /* поверх всего контента */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  z-index: 10;
 }
 .logo {
   font-size: 1.6rem;
