@@ -22,12 +22,14 @@ body {
 }
 header {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem;
-  z-index: 10;
+  background: rgba(0,0,0,0.8); /* немного затемненный фон */
+  padding: 0.5rem 1.5rem;
+  box-sizing: border-box;
+  position: fixed;  /* фиксируем header */
+  top: 0;           /* привязка к верхней границе */
+  left: 0;
+  right: 0;
+  z-index: 1000;    /* поверх всего контента */
 }
 .logo {
   font-size: 1.6rem;
