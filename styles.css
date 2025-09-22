@@ -85,7 +85,6 @@ ul, ol {
   justify-content: center;
   align-items: center;
   margin-top: 1.3rem;
-  padding: 0.8rem 1.5rem;
   background: #00f0ff;
   color: #000;
   border-radius: 8px;
@@ -151,6 +150,8 @@ nav {
   }
 
   .btn {
+    width: 5.0rem;
+    height: 2.0rem;
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
   }
