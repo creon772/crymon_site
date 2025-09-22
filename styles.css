@@ -20,7 +20,8 @@ body {
   justify-content: space-between;
 }
 #contact {
-  margin-top: 3.0rem;
+  margin-top: 5.0rem;
+  font-size: 0.6rem;
 }
 header {
   width: 100%;
@@ -78,8 +79,8 @@ ul, ol {
   box-shadow: 0 0 10px #00f0ff;  
 }
 .contact-btn { 
-  display: inline-block;
-  width: 200px;
+  display: block;
+  width: 150px;
   height: 35px;
   flex-direction: column;
   margin-top: 0.7rem;
