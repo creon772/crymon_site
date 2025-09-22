@@ -19,6 +19,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+#contact {
+  margin-top: 2.0rem;
+}
 header {
   width: 100%;
   display: flex;
