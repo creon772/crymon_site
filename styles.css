@@ -150,9 +150,13 @@ nav {
     font-size: 1.2rem;
   }
 
-  nav a, .lang-switch a {
+  .lang-switch a {
+    font-size: 1.2rem;
+  }
+    
+  nav a {
     font-size: 0.8rem;
-    margin: 0.2rem 0;
+    margin: 0.5rem 0;
   }
 
   h1 {
