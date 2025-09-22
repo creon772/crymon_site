@@ -25,31 +25,22 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   padding: 1.5rem;
   z-index: 10;
 }
 .logo {
-  flex: 0 0 auto;
   font-size: 1.6rem;
   color: #00f0ff;
 }
-nav a {
-  position: absolute;
-  display: flex;
-  gap: 1.2rem;
+nav a, .lang-switch a {
+  margin-left: 1rem;
   color: white;
-  margin-left: 1.0rem;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .lang-switch {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  flex: 0 0 auto;
+  margin-left: 1rem;
 }
 main {
   padding: 6rem 1.5rem 3rem;
@@ -74,7 +65,7 @@ ul, ol {
 }
 .btn {
   display: inline-block;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 0.8rem 1.5rem;
   background: #00f0ff;
   color: #000;
