@@ -68,6 +68,7 @@ ul, ol {
 }
 .btn {
   display: block;
+  width: auto;
   margin-top: 4rem;
   padding: 0.8rem 1.5rem;
   background: #00f0ff;
