@@ -69,7 +69,7 @@ ul, ol {
 .btn {
   display: block;
   width: auto;
-  margin-top: 4rem;
+  margin-top: 0.2rem;
   padding: 0.8rem 1.5rem;
   background: #00f0ff;
   color: #000;
