@@ -29,6 +29,7 @@ header {
   z-index: 10;
 }
 .logo {
+  flex: 0 0 auto;
   font-size: 1.6rem;
   color: #00f0ff;
 }
@@ -40,6 +41,7 @@ nav a, .lang-switch a {
   font-size: 1.1rem;
 }
 .lang-switch {
+  flex: 0 0 auto;
   margin-left: 1rem;
 }
 main {
