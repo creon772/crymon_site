@@ -33,12 +33,14 @@ header {
   font-size: 1.6rem;
   color: #00f0ff;
 }
-nav a, .lang-switch a {
+nav a {
   margin-left: 1rem;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.95rem;
+  flex-grow: 1;
+  font-size: 1.1rem;
+  justify-content: center;
 }
 .lang-switch {
   margin-left: 1rem;
