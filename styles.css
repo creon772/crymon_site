@@ -67,9 +67,8 @@ ul, ol {
   padding-left: 1rem;
 }
 .btn {
-  display: block;
-  width: auto;
-  margin-top: 0.2rem;
+  display: inline-block;
+  margin-top: 2rem;
   padding: 0.8rem 1.5rem;
   background: #00f0ff;
   color: #000;
