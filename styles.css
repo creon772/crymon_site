@@ -75,8 +75,19 @@ ul, ol {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 0 10px #00f0ff;
+  box-shadow: 0 0 10px #00f0ff;  
 }
+.contact-btn { 
+  display: block;
+  margin-top: 0.7rem;
+  padding: 0.8rem 1.5rem;
+  background: #00f0ff;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00f0ff;
+  }
 footer {
   text-align: center;
   padding: 1.5rem 1rem;
