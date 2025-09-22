@@ -37,10 +37,10 @@ nav a, .lang-switch a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
 }
 .lang-switch {
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 main {
   padding: 6rem 1.5rem 3rem;
