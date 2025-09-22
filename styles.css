@@ -82,8 +82,6 @@ ul, ol {
   display: inline-block;
   width: 110px;
   height: 25px;
-  justify-content: center;
-  align-items: center;
   margin-top: 1.3rem;
   background: #00f0ff;
   color: #000;
