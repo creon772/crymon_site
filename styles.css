@@ -25,22 +25,31 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 1.5rem;
   z-index: 10;
 }
 .logo {
+  flex: 0 0 auto;
   font-size: 1.6rem;
   color: #00f0ff;
 }
-nav a, .lang-switch a {
-  margin-left: 1rem;
+nav a {
+  position: absolute;
+  display: flex;
+  gap: 1.2rem;
+  transform: translateX(-50%);
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
 }
 .lang-switch {
-  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex: 0 0 auto;
 }
 main {
   padding: 6rem 1.5rem 3rem;
