@@ -38,8 +38,8 @@ nav a {
   position: absolute;
   display: flex;
   gap: 1.2rem;
-  transform: translateX(-50%);
   color: white;
+  margin-left: 1.0rem;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
