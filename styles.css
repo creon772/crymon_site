@@ -78,8 +78,9 @@ ul, ol {
   box-shadow: 0 0 10px #00f0ff;  
 }
 .contact-btn { 
-  display: inline-block;
+  display: flex;
   width: auto;
+  align-items: flex-start;
   flex-direction: column;
   margin-top: 0.7rem;
   padding: 0.8rem 1.5rem;
