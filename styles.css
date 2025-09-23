@@ -35,8 +35,8 @@ header {
 .cat1 {
   display: block;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 30px;
   width: 100%;
   max-width: 400px;
   height: auto;
