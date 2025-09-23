@@ -32,6 +32,13 @@ header {
   padding: 1.5rem;
   z-index: 10;
 }
+.cat1 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: auto;
+}
 .logo {
   font-size: 1.6rem;
   color: #00f0ff;
