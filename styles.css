@@ -33,10 +33,12 @@ header {
   z-index: 10;
 }
 .cat1 {
+  display: block;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 120px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
 }
 .logo {
