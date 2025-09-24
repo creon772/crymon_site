@@ -73,13 +73,18 @@ function getLastNDaysData(n) {
   const labels = [];
   const data = [];
   const today = new Date();
-
+  let lastPrice= null;
+  
   for (let i = n-1; i >= 0; i--) {
     const d = new Date();
     d.setDate(today.getDate() - i);
     const dateStr = formatDate(d); // теперь формат "24 Sep"
     labels.push(dateStr);
-    data.push(priceData[dateStr] || null);
+    
+    if (priceData[dateStr] != null) {
+      lastPrice = priceData[dateStr];
+    }
+    data.push(lastPrice);
   }
 
   return { labels, data };
