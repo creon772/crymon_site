@@ -98,7 +98,7 @@ function updateChartPeriod(days) {
     chart.update();
     return;
   }
-
+  const isMobile = window.innerWidth < 768;
   chart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -108,11 +108,11 @@ function updateChartPeriod(days) {
         data: data,
         borderColor: '#00ff99',
         backgroundColor: 'rgba(0,255,153,0.1)',
-        borderWidth: 3,
+        borderWidth: isMobile ? 2 : 3,
         tension: 0.3,
         fill: true,
         pointBackgroundColor: '#00ff99',
-        pointRadius: 5
+        pointRadius: isMobile ? 3 : 5
       }]
     },
     options: {
