@@ -51,7 +51,7 @@ let chart;
 let priceData = {}; // сюда загрузим JSON
 
 // Подгрузка JSON с GitHub
-fetch('https://raw.githubusercontent.com/ТВОЙ_РЕПО/ВЕТКА/prices.json')
+fetch('https://raw.githubusercontent.com/creon772/crymon_site/refs/heads/main/prices.json')
   .then(res => res.json())
   .then(data => {
     priceData = data;
