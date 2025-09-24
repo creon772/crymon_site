@@ -12,9 +12,9 @@ html, body {
 }
 #priceChart {
   mergin-top: 20px;
-  max-width: 90%;
-  height: auto;
-  margin: 20px auto;
+  max-width: 800px;
+  height: 400px;
+  margin: 40px auto;
   display: block;
 }
 body {
@@ -120,7 +120,11 @@ footer {
     align-items: center;
     padding: 1rem;
   }
-
+#priceChart {
+  mergin-top: 20px;
+  max-width: 90%;
+  height: 250px;
+}
   .logo {
     order: 1;
     font-size: 1.4rem;
