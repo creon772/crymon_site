@@ -125,6 +125,11 @@ function updateChartPeriod(days) {
     options: {
       responsive: true,
       plugins: { legend: { display: false } },
+      interaction: {
+        mode: 'nearest',
+        intersect: false,
+        axis: 'x'
+      },
       scales: {
         x: { grid: { color:'rgba(255,255,255,0.1)' }, ticks:{ color:'#fff' } },
         y: { beginAtZero:false, grid:{ color:'rgba(255,255,255,0.1)' }, ticks:{ color:'#fff' } }
