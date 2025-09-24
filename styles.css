@@ -30,6 +30,11 @@ body {
   margin-top: 9.0rem;
   font-size: 0.7rem;
 }
+.price-title {
+ text-align:center;
+ font-size: 32px;
+ margin-top: 30px;
+}
 header {
   width: 100%;
   display: flex;
