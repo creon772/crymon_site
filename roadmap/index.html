@@ -42,37 +42,39 @@
 <script>
 const ctx = document.getElementById('priceChart').getContext('2d');
 
+// Последние 7 дней
+const labels = [];
+for (let i = 6; i >= 0; i--) {
+  const d = new Date();
+  d.setDate(d.getDate() - i);
+  labels.push(d.getDate());
+}
+
+// Данные курса CRN (меняешь вручную только когда нужно)
+let dataValues = [0.10, 0.12, 0.15, 0.18, 0.22, 0.21, 0.09]; 
+
 const chart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Today'],
-        datasets: [{
-            label: 'CRY / USDT',
-            data: [0.10, 0.10, 0.05, 0.18, 0.22, 0.21, 0.09], 
-            borderColor: '#00ff99',
-            backgroundColor: 'rgba(0,255,153,0.1)',
-            borderWidth: 5,
-            tension: 0.1, // плавная линия
-            fill: true
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            legend: {
-                display: false // убираем лишнюю легенду
-            }
-        },
-        scales: {
-            x: {
-                grid: { display: false }
-            },
-            y: {
-                beginAtZero: false,
-                grid: { color: 'rgba(255,255,255,0.1)' }
-            }
-        }
+  type: 'line',
+  data: {
+    labels: labels,
+    datasets: [{
+      label: 'CRN / USD',
+      data: dataValues,
+      borderColor: '#00ff99',
+      backgroundColor: 'rgba(0,255,153,0.1)',
+      borderWidth: 3,
+      tension: 0.3,
+      fill: true
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { display: false } },
+      y: { beginAtZero: false, grid: { color: 'rgba(255,255,255,0.1)' } }
     }
+  }
 });
 </script>
 </body>
