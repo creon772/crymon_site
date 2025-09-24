@@ -11,10 +11,10 @@ html, body {
   overflow-x: hidden;
 }
 #priceChart {
-  mergin-top: 20px;
+  mergin-top: 10px;
   max-width: 800px;
   height: 400px;
-  margin: 40px auto;
+  margin: 20px auto;
   display: block;
 }
 body {
