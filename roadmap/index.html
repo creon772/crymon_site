@@ -66,7 +66,7 @@ function getLastNDaysData(n) {
   for (let i = n-1; i >= 0; i--) {
     const d = new Date();
     d.setDate(today.getDate() - i);
-    const dateStr = d.toLocaleDateString();
+    const dateStr = formatDate(d);
     labels.push(dateStr);
     data.push(priceData[dateStr] || null);
   }
