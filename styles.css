@@ -10,6 +10,13 @@ html, body {
   color: white;
   overflow-x: hidden;
 }
+#priceChart {
+  mergin-top: 20px;
+  max-width: 90%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
 body {
   background-size: cover;
   background-position: center;
