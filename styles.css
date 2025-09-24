@@ -32,7 +32,7 @@ html, body {
 
 #period-buttons button.active {
   background: #00f0ff;
-  color: #00f0ff;
+  color: #111;
   box-shadow: 0 0 20px #00f0ff;
 }
 
