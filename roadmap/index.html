@@ -50,30 +50,42 @@ const ctx = document.getElementById('priceChart').getContext('2d');
 let chart;
 let priceData = {}; // сюда загрузим JSON
 
-// Подгрузка JSON с GitHub
+// Массив месяцев для форматирования даты
+const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function formatDate(date) {
+  const day = date.getDate();
+  const month = months[date.getMonth()];
+  return ${day} ${month};
+}
+
+// Подгрузка JSON с GitHub (RAW-ссылка)
 fetch('https://raw.githubusercontent.com/creon772/crymon_site/refs/heads/main/prices.json')
   .then(res => res.json())
   .then(data => {
     priceData = data;
     updateChartPeriod(7); // стартовый период 7 дней
-  });
+  })
+  .catch(err => console.error('Error loading JSON:', err));
 
-// Функция для генерации лейблов и данных
+// Генерация лейблов и данных за последние N дней
 function getLastNDaysData(n) {
   const labels = [];
   const data = [];
   const today = new Date();
+
   for (let i = n-1; i >= 0; i--) {
     const d = new Date();
     d.setDate(today.getDate() - i);
-    const dateStr = formatDate(d);
+    const dateStr = formatDate(d); // теперь формат "24 Sep"
     labels.push(dateStr);
     data.push(priceData[dateStr] || null);
   }
+
   return { labels, data };
 }
 
-// Функция обновления графика
+// Обновление графика для выбранного периода
 function updateChartPeriod(days) {
   document.querySelectorAll('#period-buttons button').forEach(b => b.classList.remove('active'));
   document.getElementById('btn'+days).classList.add('active');
