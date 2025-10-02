@@ -1,0 +1,294 @@
+    /* ---------------- Reset & base ---------------- */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:
+     radial-gradient(1200px 800px at 20% 15%, rgba(0, 240, 255, 0.12), transparent 70%),
+    radial-gradient(900px 600px at 80% 85%, rgba(0, 255, 153, 0.10), transparent 70%),
+    linear-gradient(180deg, #050510 0%, #000008 100%);
+  color: #e9eef6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-attachment: fixed;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
+
+    /* ---------------- Header ---------------- */
+    header{
+      position:fixed;
+      top:0;left:0;right:0;
+      height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 20px;
+      z-index:60;
+      backdrop-filter: blur(8px);
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-bottom:1px solid rgba(255,255,255,0.03);
+    }
+
+    .header-left{display:flex;align-items:center;gap:14px}
+    .logo {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:800;
+      font-family:"Orbitron", sans-serif;
+      color:transparent;
+      background:linear-gradient(90deg,#00f0ff,#00ff99);
+      -webkit-background-clip:text;
+      font-size:1.25rem;
+    }
+    .logo img{width:40px;height:40px;border-radius:8px;object-fit:cover}
+
+    /* hamburger */
+    .hamburger {
+      width:42px;height:42px;border-radius:10px;
+      display:grid;place-items:center;
+      cursor:pointer;
+      border:1px solid rgba(255,255,255,0.04);
+      background:rgba(255,255,255,0.02);
+    }
+    .hamburger .bar{
+      width:20px;height:2px;background:#cfeff0;
+      box-shadow:0 6px 0 0 #cfeff0, 0 -6px 0 0 #cfeff0;
+    }
+
+    /* CTA button */
+    .cta {
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 16px;
+      border-radius:12px;
+      background:linear-gradient(90deg,#00f0ff,#00ff99);
+      color:#041017;
+      font-weight:700;
+      box-shadow:0 6px 18px rgba(0,240,255,0.12);
+    }
+    .cta img{width:18px;height:18px}
+
+    /* ---------------- Page layout ---------------- */
+    main{padding-top:92px} /* header height + spacing */
+
+    section{padding:64px 20px; max-width:1100px; margin:0 auto}
+
+    /* Hero */
+    #hero{
+      display:flex;
+      gap:32px;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .hero-left{max-width:640px}
+    .kicker{
+      display:inline-block;
+      background:linear-gradient(90deg, rgba(0,240,255,0.08), rgba(0,255,153,0.06));
+      color:#a8fff0;
+      padding:6px 12px;border-radius:999px;font-weight:600;margin-bottom:18px;
+      font-size:0.9rem;
+    }
+    h1{
+      font-family:"Orbitron",sans-serif;
+      font-size:2.2rem;
+      line-height:1.02;
+      margin-bottom:12px;
+      color:transparent;
+      background:linear-gradient(90deg,#00f0ff,#00ff99);
+      -webkit-background-clip:text;
+    }
+    .lead{
+      color:#bcdfe0;
+      margin-bottom:20px;font-size:1rem;
+    }
+
+    .hero-actions{display:flex;gap:12px;align-items:center}
+    .btn-primary{
+      display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:12px;
+      background:linear-gradient(90deg,#00f0ff,#00ff99);color:#041017;font-weight:700;
+      box-shadow:0 12px 30px rgba(0,240,255,0.12);
+    }
+    .btn-outline{
+      padding:10px 16px;border-radius:12px;border:1px solid rgba(255,255,255,0.06);
+      color:#e6f7f7;background:transparent;font-weight:600;
+    }
+
+    /* hero right image */
+    .hero-visual{width:360px;max-width:40%}
+    .hero-visual img{border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,0.6);}
+
+    /* ---------------- Chart block ---------------- */
+    #chart{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px;padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.6);
+    }
+    .chart-row{display:flex;flex-direction:column;gap:14px;align-items:center}
+    canvas{width:100% !important; height:360px !important; max-width:920px}
+    .periods{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:6px}
+#period-buttons button {
+  padding: 5px 35px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00f0ff, #00ff99);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  font-size: 0.95rem;
+}
+
+#period-buttons button.active {
+  box-shadow: 0 0 20px #00f0ff;
+  transform: scale(1.05);
+}
+
+#period-buttons button:hover {
+  box-shadow: 0 0 12px #00f0ff;
+  transform: scale(1.02);
+}
+    /* ---------------- Sections ---------------- */
+    #about .cols{display:flex;gap:30px;align-items:center}
+    #about .cols .col{flex:1}
+
+    /* cards */
+    .cards{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;padding:18px;width:220px;text-align:left;
+      box-shadow:0 10px 30px rgba(0,0,0,0.6);
+    }
+    .card h4{margin-bottom:8px;color:#dffdf8}
+
+    /* roadmap list */
+    .roadmap-list{list-style:none;padding-left:0;display:flex;flex-direction:column;gap:12px}
+    .roadmap-list li{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+
+    /* contact */
+    #contact p{color:#bfcfd1}
+    .socials{display:flex;gap:15px;align-items:center;margin-top:20px}
+
+    /* ---------------- Modal menu ---------------- */
+    .menu-overlay{
+      position:fixed;inset:0;display:none;align-items:flex-start;justify-content:flex-end;
+      background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);z-index:120;
+    }
+    .menu-panel{
+      width:320px;max-width:90%;background:linear-gradient(180deg,#051018, #021016);
+      border-radius:14px;padding:18px;border:1px solid rgba(255,255,255,0.04);
+      box-shadow:0 30px 80px rgba(0,0,0,0.7);
+    }
+    .menu-panel nav{display:flex;flex-direction:column;gap:12px}
+    .menu-panel nav a{padding:10px;border-radius:10px;font-weight:700;color:#e9fbff}
+    .menu-close{display:flex;justify-content:flex-end}
+
+    /* ---------------- Footer ---------------- */
+    footer{padding:36px 20px;background:linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.6));text-align:center;color:#8ea6a8;margin-top:40px}
+
+    /* ---------------- Responsive ---------------- */
+ @media (max-width: 768px) {
+  /* Header */
+  header {
+    height: 64px;
+    padding: 0 16px;
+  }
+  .header-left {
+    gap: 10px;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .hamburger {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Hero */
+  #hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+  .hero-left {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+  .lead {
+    font-size: 0.95rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Hero visual */
+  .hero-visual {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Chart block */
+  #chart {
+    padding: 20px;
+  }
+  canvas {
+    height: 260px !important;
+  }
+  #period-buttons button {
+    padding: 5px 20px;
+    font-size: 0.85rem;
+  }
+
+  /* About & Cards */
+  #about .cols {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  /* Roadmap */
+  .roadmap-list li {
+    padding: 10px;
+  }
+
+  /* Contact */
+  .socials {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* Menu panel */
+  .menu-panel {
+    width: 260px;
+    padding: 16px;
+  }
+  .menu-panel nav a {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 24px 16px;
+    font-size: 0.8rem;
+  }
+}
