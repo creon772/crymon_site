@@ -201,46 +201,47 @@ width:360px;max-width:40%
     .menu-panel nav{display:flex;flex-direction:column;gap:12px}
     .menu-panel nav a{padding:10px;border-radius:10px;font-weight:700;color:#e9fbff}
     .menu-close{display:flex;justify-content:flex-end}
+
 #screenshots {
   padding: 60px 20px;
-  text-align: center;
-  background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.7));
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #screenshots h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 2rem;
-  color: #00ff99;
+  text-align: center;
+  color: #00f0ff;
+  font-family: "Orbitron", sans-serif;
   margin-bottom: 40px;
 }
 
 .screens-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   justify-items: center;
+  align-items: center;
 }
 
 .screen-card {
-  background: rgba(255,255,255,0.05);
-  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 14px;
+  padding: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
-  opacity: 0;
-  transform: translateY(30px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .screen-card img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 10px;
 }
 
-/* При появлении на экране */
-.screen-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-  box-shadow: 0 10px 25px rgba(0,255,153,0.3);
+.screen-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(0,240,255,0.3);
 }
     footer{padding:36px 20px;background:linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.6));text-align:center;color:#8ea6a8;margin-top:40px}
 
@@ -345,6 +346,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
