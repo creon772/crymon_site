@@ -299,18 +299,22 @@ width:360px;max-width:40%
   }
 
   .screen-card {
-    min-width: 150px; 
-    max-width: 65%;
-    flex: 0 0 auto;
+    flex: 0 0 120px;
+    height: auto;
+  }
+  .screen-card img {
+   width: 100%;
+    height: auto;
+      border-radius: 10px;
   }
 
   .screens-grid::-webkit-scrollbar {
-    height: 8px;
+    height: 6px;
   }
 
   .screens-grid::-webkit-scrollbar-thumb {
     background: rgba(0,240,255,0.4);
-    border-radius: 4px;
+    border-radius: 3px;
   }
 }
   /* Chart block */
@@ -368,6 +372,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
