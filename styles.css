@@ -125,7 +125,7 @@ width:360px;max-width:40%
 }
 
 .hero-visual img {
-  width: 200px; /* размер картинки */
+  width: 400px; /* размер картинки */
   animation: blink 1.5s infinite; /* мерцание */
 }
 
@@ -306,6 +306,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
