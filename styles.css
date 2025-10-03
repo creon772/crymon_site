@@ -125,14 +125,14 @@ width:360px;max-width:40%
 }
 
 .hero-visual img {
-  width: 400px; /* размер картинки */
-  animation: blink 1.5s infinite; /* мерцание */
+  width: 450px; /* размер картинки */
+  animation: blink 2.5s infinite; /* мерцание */
 }
 
 /* Анимация мерцания */
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
+  0%, 120% { opacity: 1.2; }
+  30% { opacity: 0.3; }
 }
 
 
@@ -306,6 +306,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
