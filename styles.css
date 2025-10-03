@@ -202,7 +202,47 @@ width:360px;max-width:40%
     .menu-panel nav a{padding:10px;border-radius:10px;font-weight:700;color:#e9fbff}
     .menu-close{display:flex;justify-content:flex-end}
 
-    /* ---------------- Footer ---------------- */
+#screenshots {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(0,0,0,0.7));
+}
+
+#screenshots h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #00ff99;
+  margin-bottom: 40px;
+}
+
+.screens-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.screen-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.screen-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* При появлении на экране */
+.screen-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 10px 25px rgba(0,255,153,0.3);
+}
     footer{padding:36px 20px;background:linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.6));text-align:center;color:#8ea6a8;margin-top:40px}
 
     /* ---------------- Responsive ---------------- */
@@ -306,6 +346,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
