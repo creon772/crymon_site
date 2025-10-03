@@ -173,7 +173,7 @@
 
     /* contact */
     #contact p{color:#bfcfd1}
-    .socials{display:flex;gap:15px;align-items:center;margin-top:20px}
+    .socials{display:flex;gap:15px;align-items:center;margin-top:25px}
 
     /* ---------------- Modal menu ---------------- */
     .menu-overlay{
@@ -293,5 +293,6 @@
   }
 
 }
+
 
 
