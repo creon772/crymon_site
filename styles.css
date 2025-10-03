@@ -132,7 +132,11 @@ width:360px;max-width:40%
 /* Анимация мерцания */
 @keyframes blink {
   0%, 100% { opacity: 1.2; }
-  50% { opacity: 0.5; }
+    25% { opacity: 0.7; }
+    35% { opacity: 0.5; }
+    50% { opacity: 0.1; }
+    65% { opacity: 0.5; }
+    75% { opacity: 0.7; }
 }
 
 
@@ -306,6 +310,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
