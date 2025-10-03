@@ -299,7 +299,8 @@ width:360px;max-width:40%
   }
 
   .screen-card {
-    min-width: 220px; /* или нужная ширина скрина */
+    min-width: 150px; 
+    max-width: 65%;
     flex: 0 0 auto;
   }
 
@@ -367,6 +368,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
