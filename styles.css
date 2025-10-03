@@ -299,11 +299,13 @@ width:360px;max-width:40%
   }
 
   .screen-card {
-    flex: 0 0 120px;
+    flex: 0 0 auto;
+    width: 90vw;
     height: auto;
+    max-width: 400px;
   }
   .screen-card img {
-   max-width: 90vw;
+   width: 100%;
     height: auto;
       border-radius: 10px;
   }
@@ -371,6 +373,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
