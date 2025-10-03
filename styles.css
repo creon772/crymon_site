@@ -290,7 +290,28 @@ width:360px;max-width:40%
     width: 100%;
     max-width: 420px;
   }
+  .screens-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 10px;
+  }
 
+  .screen-card {
+    min-width: 220px; /* или нужная ширина скрина */
+    flex: 0 0 auto;
+  }
+
+  .screens-grid::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .screens-grid::-webkit-scrollbar-thumb {
+    background: rgba(0,240,255,0.4);
+    border-radius: 4px;
+  }
+}
   /* Chart block */
   #chart {
     padding: 20px;
@@ -346,6 +367,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
