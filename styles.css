@@ -235,7 +235,7 @@ width:360px;max-width:40%
 .screen-card img {
   width: 100%;
   height: auto;
-  display: block;
+  max-width: 260px;
   border-radius: 10px;
 }
 
@@ -316,7 +316,6 @@ width:360px;max-width:40%
     background: rgba(0,240,255,0.4);
     border-radius: 3px;
   }
-}
   /* Chart block */
   #chart {
     padding: 20px;
@@ -372,6 +371,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
