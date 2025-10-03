@@ -208,13 +208,6 @@ width:360px;max-width:40%
   margin: 30px auto;
 }
 
-#screenshots h2 {
-  text-align: center;
-  color: #00f0ff;
-  font-family: "Orbitron", sans-serif;
-  margin-bottom: 40px;
-}
-
 .screens-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -373,6 +366,7 @@ width:360px;max-width:40%
   }
 
 }
+
 
 
 
