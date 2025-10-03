@@ -120,8 +120,36 @@
     }
 
     /* hero right image */
-    .hero-visual{width:360px;max-width:40%}
-    .hero-visual img{border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,0.6);}
+.hero-visual {
+  position: fixed; /* над всем контентом */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.8); /* полупрозрачный фон */
+  z-index: 1000;
+  animation: fadeOut 2s ease forwards 2s; /* исчезнет через 2 секунды после задержки */
+}
+
+.hero-visual img {
+  width: 200px; /* размер картинки */
+  animation: blink 1.5s infinite; /* мерцание */
+}
+
+/* Анимация мерцания */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+/* Анимация исчезновения окна */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
 
     /* ---------------- Chart block ---------------- */
     #chart{
@@ -293,6 +321,7 @@
   }
 
 }
+
 
 
 
